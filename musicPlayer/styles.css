@@ -1,11 +1,11 @@
 :root {
   /* colors */
-  --primary-color: #dfdfe2;
+  --primary-color: #e8e8e8;
   --secondary-color: #ffffff;
-  --app-background-color: #4d4d62;
-  --background-color: #1b1b32;
-  --foreground-color: #3b3b4f;
-  --highlight-color: #f1be32;
+  --app-background-color: #353a40;
+  --background-color: #20262d;
+  --foreground-color: #2c3036;
+  --highlight-color: #ff6f61;
 
   /* font sizes */
   --root-font-size: 16px;
@@ -20,6 +20,7 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  border-radius: 20px;
 }
 
 body {

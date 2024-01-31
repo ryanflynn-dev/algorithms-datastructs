@@ -16,3 +16,9 @@ checkBtn.addEventListener("click", () => {
     result.innerText = `${text} is not a palindrome`;
   }
 });
+
+textInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    checkBtn.click();
+  }
+});

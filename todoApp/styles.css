@@ -1,0 +1,85 @@
+body {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+main {
+  max-width: 600px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.todo-app {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  background-color: #4caf50;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.large-btn {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.task-form,
+.task-form-body,
+dialog {
+  margin-top: 20px;
+  background-color: #333;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #333;
+}
+
+.close-icon {
+  cursor: pointer;
+  fill: #f44336;
+}
+
+.confirm-close-dialog {
+  border-radius: 5px;
+}
+
+.confirm-close-dialog-btn-container {
+  text-align: right;
+  margin-top: 15px;
+}
+
+#tasks-container {
+  margin-top: 30px;
+}
