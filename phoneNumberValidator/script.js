@@ -16,6 +16,15 @@ checkBtn.addEventListener("click", () => {
   }
 });
 
+userInput.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    checkBtn.click();
+  }
+  if (event.key === "Escape") {
+    clearInput();
+  }
+});
+
 function validatePhoneNumber(number) {
   const regex = /^(1\s?)?(\(\d{3}\)|\d{3})[\s-]?\d{3}[\s-]?\d{4}$/;
   return regex.test(number);

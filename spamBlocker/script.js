@@ -23,3 +23,13 @@ checkMessageButton.addEventListener("click", () => {
     : "This message does not seem to contain any spam.";
   messageInput.value = "";
 });
+
+messageInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    checkMessageButton.click();
+  }
+
+  if (e.key === "Escape") {
+    messageInput.value = "";
+  }
+});
