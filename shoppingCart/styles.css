@@ -1,0 +1,74 @@
+:root {
+  --background-color: #121212;
+  --text-color: #e0e0e0;
+  --accent-color: #bb86fc;
+  --button-background: #333333;
+  --button-text-color: #ffffff;
+  --button-hover-background: #454545;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--button-background);
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.btn {
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--button-hover-background);
+}
+
+#cart-container {
+  display: none;
+  padding: 20px;
+  margin-top: 20px;
+  overflow-y: scroll;
+
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: var(--button-background);
+  color: var(--text-color);
+  width: 200px;
+  height: 400px;
+  border: 8px double black;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 1.2rem;
+  overflow-y: scroll;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+}
